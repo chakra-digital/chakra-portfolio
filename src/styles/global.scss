@@ -1,3 +1,10 @@
+// Core Mixins, Functions and Variables
+@import "./core/breakpoints";
+
+// Partials
+@import "./partials/grid";
+@import "./partials/typography";
+
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -13,4 +20,7 @@ body {
   font-family: "Manrope", sans-serif;
   font-weight: normal;
   word-wrap: break-word;
+  background-color: #1b1823;
+  color: white;
+  position: relative;
 }

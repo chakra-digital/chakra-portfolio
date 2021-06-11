@@ -4,7 +4,12 @@ import "./header.scss"
 const Header = () => {
   return (
     <header>
-      <h1>Joshua Chakra</h1>
+      <h3>Joshua Chakra</h3>
+      <ul>
+        <li>Work</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
     </header>
   )
 }

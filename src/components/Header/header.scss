@@ -1,7 +1,19 @@
 header {
-  background-color: purple;
-  color: orange;
+  background-color: #1b1823;
+  color: white;
   height: 80px;
   display: flex;
+  justify-content: space-between;
   align-items: center;
+  padding: 0 percentage(1/18);
+
+  ul {
+    display: flex;
+
+    li {
+      margin: auto;
+      padding-left: 15px;
+      list-style-type: none;
+    }
+  }
 }

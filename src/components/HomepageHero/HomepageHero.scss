@@ -26,4 +26,22 @@
     right: 0;
     bottom: 0;
   }
+
+  &__bottom-content {
+    display: flex;
+    margin-top: 60px;
+  }
+
+  &__bio {
+    width: percentage(10/16);
+    font-size: 1.2rem;
+  }
+
+  &__links {
+    width: percentage(4/16);
+    display: flex;
+    flex-direction: column;
+    padding-left: percentage(2/16);
+    margin-top: 12px;
+  }
 }

@@ -27,10 +27,11 @@ const HomepageHero = () => {
       </div>
       <div className="homepage-hero__bottom-content">
         <p className="homepage-hero__bio">
-          Wassup ~ some say this is the unicorn path 🦄 Over a decade in the
-          game as content producer, designer, entrepreneur, marketer and above
-          all, developer. Loving every new challenge. Blessed with two
-          princesses and a loving Mrs 👑 Passionate about the future of tech!
+          Wassup ~ some say this is the unicorn path <span> 🦄 </span> Over a
+          decade in the game as content producer, designer, entrepreneur,
+          marketer and above all, developer. Loving every new challenge. Blessed
+          with two princesses and a loving Mrs 👑 Passionate about the future of
+          tech!
         </p>
         <div className="homepage-hero__links">
           <Link to="" className="link">

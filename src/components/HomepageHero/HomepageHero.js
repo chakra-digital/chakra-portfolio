@@ -11,7 +11,7 @@ const HomepageHero = () => {
   return (
     <section className="homepage-hero">
       <div className="homepage-hero__headings">
-        <h1 className="display">Web Dev</h1>
+        <h1 className="display">Web Developer</h1>
         <h1 className="display">Multimedia Artist</h1>
         <h1 className="display">Marketing Ninja</h1>
       </div>

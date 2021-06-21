@@ -4,6 +4,7 @@ import { StaticImage } from "gatsby-plugin-image"
 import FileDownloadSvg from "../../assets/file-download-line.svg"
 import LinkedInSvg from "../../assets/linkedin-box-line.svg"
 import YoutubeSvg from "../../assets/youtube-line.svg"
+import FloatingIcon from "../FloatingIcon/FloatingIcon"
 
 import "./HomepageHero.scss"
 
@@ -24,7 +25,11 @@ const HomepageHero = () => {
           alt="Joshua Chakra"
           className="homepage-hero__poster-image"
         />
+        <div className="floating-icons">
+          <FloatingIcon src="../../assets/logo-Sass.jpg" alt="Sass-logo" />
+        </div>
       </div>
+
       <div className="homepage-hero__bottom-content">
         <p className="homepage-hero__bio">
           Hey there ~ some say I'm a unicorn <span> 🦄 </span> Over a decade in
@@ -47,6 +52,7 @@ const HomepageHero = () => {
             YouTube Channel →
           </Link>
         </div>
+        f
       </div>
 
       <h3 className="homepage-hero__see-work">Check out some of my work 👇</h3>

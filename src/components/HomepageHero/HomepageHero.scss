@@ -19,6 +19,17 @@
     }
   }
 
+  &__floating-icons {
+    .floating-icon {
+      position: absolute;
+
+      &:nth-child(1) {
+        top: 0;
+        right: 0;
+      }
+    }
+  }
+
   &__poster-image {
     position: absolute !important;
     top: 0;

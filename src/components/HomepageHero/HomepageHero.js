@@ -1,14 +1,31 @@
 import React from "react"
-import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
+import { Link, useStaticQuery, graphql } from "gatsby"
+import { StaticImage, GatsbyImage } from "gatsby-plugin-image"
+import FloatingIcon from "../FloatingIcon/FloatingIcon"
 import FileDownloadSvg from "../../assets/file-download-line.svg"
 import LinkedInSvg from "../../assets/linkedin-box-line.svg"
 import YoutubeSvg from "../../assets/youtube-line.svg"
-import FloatingIcon from "../FloatingIcon/FloatingIcon"
 
 import "./HomepageHero.scss"
 
 const HomepageHero = () => {
+  const data = useStaticQuery(graphql`
+    query MyQuery {
+      allFile(filter: { relativePath: { regex: "/^logo-/" } }) {
+        nodes {
+          childImageSharp {
+            gatsbyImageData(
+              placeholder: DOMINANT_COLOR
+              formats: [AUTO, WEBP, AVIF]
+            )
+          }
+        }
+      }
+    }
+  `)
+
+  const iconsArray = data.allFile.nodes
+
   return (
     <section className="homepage-hero">
       <div className="homepage-hero__headings">
@@ -25,9 +42,12 @@ const HomepageHero = () => {
           alt="Joshua Chakra"
           className="homepage-hero__poster-image"
         />
-        <div className="floating-icons">
-          <FloatingIcon src="../../assets/logo-Sass.jpg" alt="Sass-logo" />
-        </div>
+      </div>
+      <div className="homepage-hero__floating-icons">
+        {iconsArray.map(icon => {
+          console.log(icon)
+          return <FloatingIcon imgObj={icon} />
+        })}
       </div>
 
       <div className="homepage-hero__bottom-content">

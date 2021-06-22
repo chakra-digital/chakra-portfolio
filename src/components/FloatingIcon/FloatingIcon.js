@@ -1,16 +1,15 @@
 import React from "react"
-import { StaticImage } from "gatsby-plugin-image"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
-const FloatingIcon = ({ src, alt }) => {
+import "./FloatingIcon.scss"
+
+const FloatingIcon = ({ imgObj, alt }) => {
+  const image = getImage(imgObj)
+
   return (
-    <StaticImage
-      src={src}
-      quality={95}
-      placeholder="traced SVG"
-      formats={["AUTO", "WEBP", "AVIF"]}
-      alt={alt}
-      className="homepage-hero__floating-icon"
-    />
+    <div className="floating-icon">
+      <GatsbyImage image={image} alt={alt} />
+    </div>
   )
 }
 

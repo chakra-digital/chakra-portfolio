@@ -24,6 +24,8 @@ const HomepageHero = () => {
     }
   `)
 
+  // ^ writing query up top in components vs on bottom in pages
+
   const iconsArray = data.allFile.nodes
 
   return (

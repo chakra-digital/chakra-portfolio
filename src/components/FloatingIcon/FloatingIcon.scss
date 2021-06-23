@@ -3,3 +3,6 @@
     border-radius: 50%;
   }
 }
+
+// styling my component in the file scope of the component
+// vs what context it has in use (aka. HomePageHero vs Proj page)

@@ -1,6 +1,8 @@
 .floating-icon {
+  img,
   .gatsby-image-wrapper {
     border-radius: 50%;
+    overflow: hidden;
   }
 }
 

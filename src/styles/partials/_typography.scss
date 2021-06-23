@@ -1,6 +1,8 @@
 h1 {
   &.display {
-    font-size: 112px;
+    font-size: max(calc(7.1vw), 112px);
     letter-spacing: -0.04em;
+    line-height: 1.1;
+    margin: 0;
   }
 }

@@ -1,13 +1,19 @@
 import React from "react"
-import { StaticImage } from "gatsby-plugin-image"
+import { Link, useStaticQuery, graphql } from "gatsby"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
-const ProjectThumbnail = () => {
+import "./ProjectThumbnail.scss"
+
+const ProjectThumbnail = ({ imgObj, alt }) => {
+  const image = getImage(imgObj)
+
   return (
-    <section className="project-thumbnail">
-      {/* imgObj
-      <em>title</em>
-      category of proj url */}
-    </section>
+    <div className="project-thumbnail">
+      <GatsbyImage image={image} alt={alt} />
+      <Link to="https://carsoncreekranch.com"></Link>
+      <h3>Project Name</h3>
+      <h5>CATEGORY</h5>
+    </div>
   )
 }
 

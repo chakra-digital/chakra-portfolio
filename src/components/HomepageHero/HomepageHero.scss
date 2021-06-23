@@ -28,12 +28,11 @@
   }
 
   &__floating-icons {
-    background-color: cyan;
     width: percentage(4/16);
     display: flex;
     padding: 5px;
     position: absolute;
-    top: 280px;
+    top: 230px;
     left: percentage(977/1440);
 
     .floating-icon {
@@ -47,42 +46,49 @@
       &:nth-child(6) {
         left: 160px;
         animation-duration: 3.1s;
+        max-width: 112px;
       }
       // JS icon
       &:nth-child(1) {
         top: 120px;
         left: 5px;
         animation-duration: 2.9s;
+        max-width: 122px;
       }
       // Gatsby icon
       &:nth-child(2) {
         top: 250px;
         left: 170px;
         animation-duration: 2.4s;
+        max-width: 103px;
       }
       // React icon
       &:nth-child(4) {
         top: 300px;
         left: -45px;
         animation-duration: 3.8s;
+        max-width: 103px;
       }
       // Node icon
       &:nth-child(3) {
-        top: 420px;
+        top: 410px;
         left: 85px;
         animation-duration: 3.2s;
+        max-width: 112px;
       }
       // Mongo icon
       &:nth-child(5) {
-        top: 560px;
+        top: 540px;
         left: 200px;
         animation-duration: 4s;
+        max-width: 103px;
       }
       // Wordpress icon
       &:nth-child(7) {
-        top: 680px;
+        top: 640px;
         left: 90px;
         animation-duration: 3.6s;
+        max-width: 98px;
       }
 
       @keyframes floating {
@@ -106,7 +112,8 @@
 
   &__bio {
     width: percentage(10/16);
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+    font-weight: 400;
   }
 
   &__links {
@@ -115,5 +122,13 @@
     flex-direction: column;
     padding-left: percentage(2/16);
     margin-top: 18px;
+
+    .link {
+      display: flex;
+      text-decoration: none;
+      color: white;
+      font-weight: 800;
+      line-height: 1.6;
+    }
   }
 }

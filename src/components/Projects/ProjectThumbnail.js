@@ -10,7 +10,7 @@ const ProjectThumbnail = ({ imgObj, alt }) => {
   return (
     <div className="project-thumbnail">
       <GatsbyImage image={image} alt={alt} />
-      <Link to="https://carsoncreekranch.com"></Link>
+      <Link to=""></Link>
       <h3>Project Name</h3>
       <h5>CATEGORY</h5>
     </div>

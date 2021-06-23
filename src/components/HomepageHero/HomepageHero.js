@@ -74,7 +74,6 @@ const HomepageHero = () => {
             YouTube Channel →
           </Link>
         </div>
-        f
       </div>
 
       <h3 className="homepage-hero__see-work">Check out some of my work 👇</h3>

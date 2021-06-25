@@ -1,12 +1,12 @@
-import React from "react"
-import { Link, useStaticQuery, graphql } from "gatsby"
-import { StaticImage, GatsbyImage } from "gatsby-plugin-image"
-import FloatingIcon from "../FloatingIcon/FloatingIcon"
-import FileDownloadSvg from "../../assets/file-download-line.svg"
-import LinkedInSvg from "../../assets/linkedin-box-line.svg"
-import YoutubeSvg from "../../assets/youtube-line.svg"
+import React from 'react';
+import { Link, useStaticQuery, graphql } from 'gatsby';
+import { StaticImage, GatsbyImage } from 'gatsby-plugin-image';
+import FloatingIcon from '../FloatingIcon/FloatingIcon';
+import FileDownloadSvg from '../../assets/file-download-line.svg';
+import LinkedInSvg from '../../assets/linkedin-box-line.svg';
+import YoutubeSvg from '../../assets/youtube-line.svg';
 
-import "./HomepageHero.scss"
+import './HomepageHero.scss';
 
 const HomepageHero = () => {
   const data = useStaticQuery(graphql`
@@ -22,11 +22,11 @@ const HomepageHero = () => {
         }
       }
     }
-  `)
+  `);
 
   // ^ writing query up top in components vs on bottom in pages
 
-  const iconsArray = data.allFile.nodes
+  const iconsArray = data.allFile.nodes;
 
   return (
     <section className="homepage-hero">
@@ -40,15 +40,15 @@ const HomepageHero = () => {
           src="../../images/jc-folio-pic.png"
           quality={95}
           placeholder="traced SVG"
-          formats={["AUTO", "WEBP", "AVIF"]}
+          formats={['AUTO', 'WEBP', 'AVIF']}
           alt="Joshua Chakra"
           className="homepage-hero__poster-image"
         />
       </div>
       <div className="homepage-hero__floating-icons">
         {iconsArray.map(icon => {
-          console.log(icon)
-          return <FloatingIcon imgObj={icon} />
+          console.log(icon);
+          return <FloatingIcon imgObj={icon} />;
         })}
       </div>
 
@@ -78,7 +78,7 @@ const HomepageHero = () => {
 
       <h3 className="homepage-hero__see-work">Check out some of my work 👇</h3>
     </section>
-  )
-}
+  );
+};
 
-export default HomepageHero
+export default HomepageHero;

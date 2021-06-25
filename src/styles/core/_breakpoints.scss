@@ -20,16 +20,16 @@ $breakpoint: 0;
   @if $size == sm {
     $breakpoint: $mq-min-sm !global;
   }
-  @if type-of($size) == "number" {
+  @if type-of($size) == 'number' {
     $breakpoint: $size !global;
   }
   @if $max {
-    @media screen and (max-width: #{$breakpoint - 1}px) {
+    @media screen and (max-width: #{$breakpoint - 1}) {
       @content;
     }
   }
   @if not $max {
-    @media screen and (min-width: #{$breakpoint}px) {
+    @media screen and (min-width: #{$breakpoint}) {
       @content;
     }
   }
@@ -42,11 +42,11 @@ $breakpoint: 0;
     $size !=
     sm and
     type-of($size) !=
-    "number"
+    'number'
   {
     @error "Must enter a breakpoint value: xl, lg, md, or sm -- or enter a number value (don't add a unit)";
   }
-  @if $max != "max" and $max != null {
+  @if $max != 'max' and $max != null {
     @error "Property needs a variable of 'max'";
   }
 }

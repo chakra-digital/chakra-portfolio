@@ -1,13 +1,14 @@
-import * as React from "react"
-import { Link, useStaticQuery, graphql } from "gatsby"
-import HomepageHero from "../components/HomepageHero/HomepageHero"
-import ProjectThumbnail from "../components/Projects/ProjectThumbnail"
+import * as React from 'react';
+import { Link, useStaticQuery, graphql } from 'gatsby';
+import HomepageHero from '../components/HomepageHero/HomepageHero';
+import ProjectThumbnail from '../components/Projects/ProjectThumbnail';
+import LogoMarquee from '../components/LogoMarquee/LogoMarquee';
 
-import Layout from "../components/Layout/layout"
-import Seo from "../components/seo"
+import Layout from '../components/Layout/layout';
+import Seo from '../components/seo';
 
-import "./index.scss"
-import "../components/Projects/ProjectThumbnail.scss"
+import './index.scss';
+import '../components/Projects/ProjectThumbnail.scss';
 
 const IndexPage = () => {
   const thumbs = useStaticQuery(graphql`
@@ -23,9 +24,9 @@ const IndexPage = () => {
         }
       }
     }
-  `)
+  `);
 
-  const thumbsArray = thumbs.allFile.nodes
+  const thumbsArray = thumbs.allFile.nodes;
 
   return (
     <Layout>
@@ -33,14 +34,16 @@ const IndexPage = () => {
       <HomepageHero />
       <section className="project-thumbnails">
         {thumbsArray.map(thumb => {
-          console.log(thumb)
-          return <ProjectThumbnail imgObj={thumb} />
+          console.log(thumb);
+          return <ProjectThumbnail imgObj={thumb} />;
         })}
       </section>
-    </Layout>
-  )
-}
 
-export default IndexPage
+      <LogoMarquee />
+    </Layout>
+  );
+};
+
+export default IndexPage;
 
 // Presentational vs layout components 💡

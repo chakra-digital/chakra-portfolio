@@ -4,7 +4,18 @@
   grid-template-columns: 1fr 1fr;
   margin-top: 50px;
 
-  // .project-thumbnail {
-  //   width: 100%;
-  // }
+  .project-thumbnail {
+    color: white;
+    text-decoration: none;
+
+    h3 {
+      font-weight: 800;
+    }
+
+    h5 {
+      text-transform: uppercase;
+      font-weight: 500;
+      letter-spacing: 15;
+    }
+  }
 }

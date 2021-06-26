@@ -1,0 +1,56 @@
+[
+  {
+    "name": "Carson Creek Ranch",
+    "category": "Web Design / Dev",
+    "slug": "carson-creek-ranch",
+    "posterPath": "project-thumb--ccr",
+    "projectPageData": {
+      "heading": "This is my heading"
+    }
+  },
+  {
+    "name": "Rauschenberg Foundation",
+    "category": "Multimedia",
+    "slug": "rauschenberg",
+    "posterPath": "project-thumb--rauschenberg",
+    "projectPageData": {
+      "heading": "This is my heading"
+    }
+  },
+  {
+    "name": "RS Walsh Landscaping",
+    "category": "Web Design / Dev",
+    "slug": "rs-walsh-landscaping",
+    "posterPath": "project-thumb--rswalsh",
+    "projectPageData": {
+      "heading": "This is my heading"
+    }
+  },
+  {
+    "name": "Noah Marion",
+    "category": "Marketing",
+    "slug": "noah-marion",
+    "posterPath": "project-thumb--noah",
+    "projectPageData": {
+      "heading": "This is my heading"
+    }
+  },
+  {
+    "name": "Service Direct",
+    "category": "Marketing",
+    "slug": "service-direct",
+    "posterPath": "project-thumb--service-direct",
+    "projectPageData": {
+      "heading": "This is my heading"
+    }
+  },
+  {
+    "name": "Midterms Matter",
+    "category": "Multimedia",
+    "slug": "midterms-matter",
+    "posterPath": "project-thumb--midterms",
+    "projectPageData": {
+      "heading": "This is my heading"
+    }
+  }
+]

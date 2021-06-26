@@ -6,6 +6,7 @@
   right: percentage(1/18);
   display: flex;
   justify-content: space-between;
+  z-index: -1;
 
   span {
     display: block;

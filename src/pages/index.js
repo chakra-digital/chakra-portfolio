@@ -3,6 +3,7 @@ import { Link, useStaticQuery, graphql } from 'gatsby';
 import Layout from '../components/Layout/layout';
 import HomepageHero from '../components/HomepageHero/HomepageHero';
 import ProjectThumbnail from '../components/Projects/ProjectThumbnail';
+import Experiments from '../components/Experiments/Experiments';
 import LogoMarquee from '../components/LogoMarquee/LogoMarquee';
 
 import projects from '../projects.json';
@@ -36,6 +37,7 @@ const IndexPage = ({ data }) => {
           );
         })}
       </section>
+      <Experiments />
       <LogoMarquee />
     </Layout>
   );

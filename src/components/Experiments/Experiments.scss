@@ -1,0 +1,8 @@
+.experiment-bar {
+  padding: 80px percentage(1/18);
+
+  .bar-inner {
+    display: flex;
+    justify-content: space-between;
+  }
+}

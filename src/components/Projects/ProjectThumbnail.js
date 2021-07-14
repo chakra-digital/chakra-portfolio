@@ -11,6 +11,9 @@ const ProjectThumbnail = ({ imgObj, name, category, slug, alt }) => {
   return (
     <Link className="project-thumbnail" to={slug}>
       <GatsbyImage image={image} alt={alt} />
+      <div className="project-thumbnail__overlay">
+        <div className="text">See project</div>
+      </div>
       <h3>{name}</h3>
       <h5>{category}</h5>
     </Link>

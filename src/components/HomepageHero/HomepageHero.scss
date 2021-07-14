@@ -9,10 +9,10 @@
     width: percentage(12/16);
     max-width: 1300px;
     position: relative;
-    margin-top: -84px;
+    margin-top: -35px;
 
     &:before {
-      content: "";
+      content: '';
       display: block;
       height: 0;
       padding-bottom: percentage(567/960);
@@ -130,5 +130,9 @@
       font-weight: 800;
       line-height: 1.6;
     }
+  }
+
+  &__see-work {
+    margin-top: 40px;
   }
 }

@@ -56,7 +56,7 @@ const HomepageHero = () => {
         <p className="homepage-hero__bio">
           Hey there ~ some say I'm a unicorn <span> 🦄 </span> Over a decade in
           the game as content producer, designer, entrepreneur, marketer and
-          above all, developer. Loving every new challenge. Blessed with two
+          above all, developer. Embracing every new challenge. Blessed with two
           princesses and a loving Mrs <span> 👑 </span> Passionate about the
           future of tech!
         </p>
